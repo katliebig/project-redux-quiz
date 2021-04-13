@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { quiz } from '../reducers/quiz'
 import Question from './Question'
 import Answers from './Answers'
+import Counter from './Counter'
 
 export const CurrentQuestion = () => {
   const question = useSelector((state) => state.quiz.questions[state.quiz.currentQuestionIndex])
@@ -20,6 +21,7 @@ export const CurrentQuestion = () => {
   return (
     <div>
       <Question />
+      <Counter />
       <Answers />
       <button onClick={() => dispatch(quiz.actions.goToNextQuestion())} disabled={!answer}>
         Go to next Question
