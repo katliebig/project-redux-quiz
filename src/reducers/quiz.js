@@ -3,13 +3,13 @@ import { createSlice } from '@reduxjs/toolkit'
 // Change these to your own questions!
 const questions = [
   { id: 1, questionText: 'How tall is Nicolas Cage?', options: ['1.83 m', '1.76 m', '1.69 m', '1.95 m'], correctAnswerIndex: 0 },
-  { id: 2, questionText: 'How many times has Nicolas Cage been married?', options: ['3 times', '0 times', '5 times', '1 time'], correctAnswerIndex: 2 },
-  { id: 3, questionText: 'In what name was Nicolas Cage born?', options: ['Nicolas Cage Kim', 'August Nicolas Coppola', 'Nicolas Coppola Cage', 'Nicolas Kim Coppola'], correctAnswerIndex: 3 },
-  { id: 4, questionText: 'What does Nicolas Cage collect?', options: ['Stamps', 'Comic books', 'Postcards', 'Hats'], correctAnswerIndex: 1 },
-  { id: 5, questionText: 'What year was Nicolas Cage born?', options: ['1968', '1956', '1964', '1959'], correctAnswerIndex: 2 },
-  { id: 6, questionText: 'How many Oscars for best actor has he won?', options: ['none', '1', '2', '3'], correctAnswerIndex: 2 },
-  { id: 7, questionText: 'Which of the following movies did Nicolas Cage not act in?', options: ['Face off', 'City of Angels', 'Shrek', 'The Ant Bully'], correctAnswerIndex: 2 },
-  { id: 8, questionText: 'Which of the following estates have Nicolas Cage not owned?', options: ['an island in the Bahamas territory', 'a medieval castle in Bavaria, Germany', 'Diamond Head Villa on Oahu, Hawaii', 'Midford Castle in Somerset, England'], correctAnswerIndex: 2 }
+  { id: 2, questionText: 'How many times has Nicolas Cage been married?', options: ['3 times', '0 times', '5 times', '1 time'], correctAnswerIndex: 2 }
+  // { id: 3, questionText: 'In what name was Nicolas Cage born?', options: ['Nicolas Cage Kim', 'August Nicolas Coppola', 'Nicolas Coppola Cage', 'Nicolas Kim Coppola'], correctAnswerIndex: 3 },
+  // { id: 4, questionText: 'What does Nicolas Cage collect?', options: ['Stamps', 'Comic books', 'Postcards', 'Hats'], correctAnswerIndex: 1 },
+  // { id: 5, questionText: 'What year was Nicolas Cage born?', options: ['1968', '1956', '1964', '1959'], correctAnswerIndex: 2 },
+  // { id: 6, questionText: 'How many Oscars for best actor has he won?', options: ['none', '1', '2', '3'], correctAnswerIndex: 2 },
+  // { id: 7, questionText: 'Which of the following movies did Nicolas Cage not act in?', options: ['Face off', 'City of Angels', 'Shrek', 'The Ant Bully'], correctAnswerIndex: 2 },
+  // { id: 8, questionText: 'Which of the following estates have Nicolas Cage not owned?', options: ['an island in the Bahamas territory', 'a medieval castle in Bavaria, Germany', 'Diamond Head Villa on Oahu, Hawaii', 'Midford Castle in Somerset, England'], correctAnswerIndex: 2 }
 ]
 
 const initialState = {

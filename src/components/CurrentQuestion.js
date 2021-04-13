@@ -4,6 +4,8 @@ import { quiz } from '../reducers/quiz'
 import Question from './Question'
 import Answers from './Answers'
 import Counter from './Counter'
+import NextButton from './NextButton'
+import Image from './Image'
 
 const CurrentQuestion = () => {
   const question = useSelector((state) => state.quiz.questions[state.quiz.currentQuestionIndex])
@@ -14,19 +16,18 @@ const CurrentQuestion = () => {
 
   const dispatch = useDispatch()
 
-  if (!question) {
-    return
-  }
-
   return (
-    <div>
-      <Question />
-      <Counter />
-      <Answers />
-      <button onClick={() => dispatch(quiz.actions.goToNextQuestion())} disabled={!answer}>
-        Go to next Question
-      </button>
-    </div>
+    <>
+      {!quizOver &&
+        <div>
+          <Image />
+          <Question />
+          <Counter />
+          <Answers />
+          <NextButton />
+        </div>
+      }
+    </>
   )
 }
 
