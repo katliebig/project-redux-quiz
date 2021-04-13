@@ -18,10 +18,9 @@ const Answers = () => {
     if (answer.isCorrect) {
       feedback = "Correct!"
     } else if (!answer.isCorrect) {
-      feedback = "Wrong!"
+      feedback = `That's wrong! The right answer is ${question.options[question.correctAnswerIndex]}.`
     }
   }
-
 
   return (
     <div className="answers">
@@ -40,8 +39,8 @@ const Answers = () => {
           </div>
         ))
       }
-      {answer !== undefined && <p>{feedback}</p>}
-    </div>
+      { answer !== undefined && <p>{feedback}</p>}
+    </div >
   )
 }
 

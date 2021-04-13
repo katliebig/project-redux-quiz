@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.correct-answer {
+  background-color: green;
+}
+
+.wrong-answer {
+  background-color: red;;
+}
